@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=<>, initial-scale=1.0">
         <title>Fleet Feet Employee Training</title>
         <link href="styles.css"  rel="stylesheet" type="text/css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <style>
             img {
             display: block;
@@ -16,25 +17,31 @@
     </head>
    	<body>
         <img src="images/fflogo.png" alt="fleet feet logo" class="center"
-            font-size: 50px;
-            width="900"
-            height="400">
-    <h1>Manager Login Page</h1>
+        font-size: 50px;
+        width="900"
+        height="400">
     <main>
-        <section id="sign-in-section">
-         	<h2>Sign In</h2>
-         	<form id="sign-in-form" onsubmit="authenticateUser(event)">
-         		<label for="username">Username:</label>
-         		<input type="text" id="username" name="username" required>
-         		<label for="password">Password:</label>
-         		<input type="password" id="password" name="password" required>
-         		
-         		
+       
+        <section id="sign-in-section">  <button><a href="index.html" class="button">Home</a></button></section>
+            <section><h1>Manager Login Page</h1></section>
+         	<section><div class="wrapper">
+                <h2>Sign In</h2>
+                <form action="">
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bx-lock-alt' ></i>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox"> Remember Me </label>
+                    </div>
          		<button type="submit">Sign In</button>
-         	</form>
-            <p>Don't have an account? <a href="createaccount.html">Create Account</a></p>
+                    <p>Don't have an account? <a href="createaccount.html">Create Account</a></p>
+                </form>
+            </div>
         </section>
     </main>
-    <a href="index.html">
-        <button>Home</button></a>
     </body>
