@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<>, initial-scale=1.0">
+        <title>Fleet Feet Employee Training</title>
+        <link href="styles.css"  rel="stylesheet" type="text/css">
+        <style>
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        </style>
+    </head>
+   	<body>
+        <img src="images/fflogo.png" alt="fleet feet logo" class="center"
+            font-size: 50px;
+            width="900"
+            height="400">
+    <h1>Manager Login Page</h1>
+    <main>
+        <section id="sign-in-section">
+         	<h2>Sign In</h2>
+         	<form id="sign-in-form" onsubmit="authenticateUser(event)">
+         		<label for="username">Username:</label>
+         		<input type="text" id="username" name="username" required>
+         		<label for="password">Password:</label>
+         		<input type="password" id="password" name="password" required>
+         		
+         		
+         		<button type="submit">Sign In</button>
+         	</form>
+            <p>Don't have an account? <a href="createaccount.html">Create Account</a></p>
+        </section>
+    </main>
+    <a href="index.html">
+        <button>Home</button></a>
+    </body>
